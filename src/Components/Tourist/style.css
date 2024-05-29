@@ -1,4 +1,4 @@
-/* Container styles */
+
 .container {
     display: flex;
     flex-flow: row;
@@ -13,7 +13,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
 }
 
-/* First container */
+
 .first-container {
     flex-basis: 48%;
     height: 800px;
@@ -28,14 +28,13 @@
     height: 50%;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.6s ease, opacity 0.4s ease, margin-left 0.6s ease; /* Add transition for sliding effect */
+    transition: transform 0.6s ease, opacity 0.4s ease, margin-left 0.6s ease; 
     margin-left: 0; /* Initial position */
 }
 
 .first-container img:hover {
-    transform: scale(1.1); /* Apply scale animation on hover */
-    opacity: 0.7; /* Reduce opacity on hover for flash effect */
-    margin-left: 20px; /* Slide image to the right on hover */
+    transform: scale(1.1);
+    margin-left: 20px; 
 }
 
 .first-container div,

@@ -20,9 +20,9 @@ import { CommonDiv } from "../Common";
 import taj from "../../assets/Taj-mahal.jpg";
 import gangtok from "../../assets/Gangtok.jpg";
 import Jallianwala from "../../assets/Jallianwala-Bagh.jpg";
-import p1 from "../../assets/2nd1.jpg";
-import p2 from "../../assets/2nd2.jpg";
-import p3 from "../../assets/2nd3.jpg";
+import p1 from "../../assets/Dubai.jpg";
+import p2 from "../../assets/Sydney.jpg";
+import p3 from "../../assets/Dubai1.jpg";
 import { ImageComp } from "../ImageCom";
 import leh from '../../assets/Leh.jpg';
 import solang from '../../assets/Solang-Valley.jpg';
@@ -72,7 +72,7 @@ export const HomePage = () => {
       0: p1,
       1: p2,
       2: p3,
-      3: ["DUBAI", "SYDNEY", "SINGAPORE"],
+      3: ["SINGAPORE", "SYDNEY", "SINGAPORE"],
     },
   ];
 

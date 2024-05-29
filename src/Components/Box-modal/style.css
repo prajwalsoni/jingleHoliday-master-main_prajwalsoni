@@ -1,16 +1,14 @@
-/* Updated styles with animations */
 
-/* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap');
 
-/* Global styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Box styles */
+
 .box {
     border: 2px solid rgb(230, 220, 220);
     height: fit-content;
@@ -26,7 +24,7 @@
     transform: scale(1.05);
 }
 
-/* Title style */
+
 .box h5 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -36,7 +34,6 @@
     animation: slideInUp 1s ease-in-out;
 }
 
-/* Subtitle style */
 .box h6 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
@@ -46,7 +43,7 @@
     animation: slideInUp 1s ease-in-out;
 }
 
-/* Description style */
+
 .box p {
     margin-bottom: 1rem;
     font-size: 1.4rem;
@@ -54,7 +51,6 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Icon styles */
 .MuiSvgIcon-root {
     font-size: 45px !important;
     color: green;
@@ -68,7 +64,7 @@
     font-size: 55px !important;
 }
 
-/* Button styles */
+
 .btn {
     height: 55px;
     font-size: 1.4rem;
@@ -83,14 +79,14 @@
     animation: slideInUp 1s ease-in-out;
 }
 
-/* Button hover effect */
+
 .btn:hover {
     background-color: #0056b3;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;

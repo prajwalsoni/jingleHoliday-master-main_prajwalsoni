@@ -61,7 +61,7 @@ nav a:hover::before {
 
 nav a:hover {
     color: black;
-    transform: translateY(-3px); /* Translate on hover */
+    transform: translateY(-3px); 
 }
 
 .logo {
@@ -92,11 +92,11 @@ nav a:hover {
     bottom: 20px;
     left: 20px;
     color: white;
-    transition: all 0.3s ease-in-out; /* Add transition for smooth transformation */
+    transition: all 0.3s ease-in-out; 
 }
 
 .details-box:hover {
-    transform: skewY(-10deg); /* Skew on hover */
+    transform: skewY(-10deg); 
 }
 
 .btns {
@@ -106,10 +106,10 @@ nav a:hover {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease-in-out; /* Add transition for smooth color change */
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btns:hover {
     background-color: #253a57;
-    transform: scale(1.1); /* Scale on hover */
+    transform: scale(1.1); 
 }

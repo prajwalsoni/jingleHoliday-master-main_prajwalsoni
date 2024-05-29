@@ -3,14 +3,14 @@ body {
     line-height: 1.5;
 }
 
-/* Contact boxes */
+
 .contact-box {
     position: fixed;
-    width: 60px; /* Reduced width */
+    width: 60px;
     padding: 5px;
     left: -30px;
-    background-color: #EFEFEF; /* Light gray background */
-    height: 60px; /* Reduced height */
+    background-color: #EFEFEF;
+    height: 60px; 
     z-index: 100;
     transition: left 0.3s;
     text-align: center;
@@ -21,7 +21,7 @@ body {
     align-items: center;
 }
 
-/* Adjust top positions for each box */
+
 .phone-box {
     top: 200px;
 }
@@ -38,17 +38,17 @@ body {
     top: 410px;
 }
 
-/* Change icon colors */
+
 .contact-box svg {
-    color: skyblue; /* Dark gray color */
+    color: skyblue; 
 }
 
-/* Hover effect */
+
 .contact-box:hover {
     left: 0;
 }
 
-/* Rest of the CSS */
+
 .our-services {
     display: flex;
     flex-flow: column;
@@ -60,13 +60,12 @@ body {
 
 .our-services h1 {
     margin-top: 20px;
-    font-size: 2.5rem; /* Reduced font size */
+    font-size: 2.5rem; 
     animation: slideInUp 1s ease-in-out;
 }
 
 .our-services p {
-    font-size: 1.8rem; /* Reduced font size */
-    width: 80%;
+    font-size: 1.8rem; 
     margin: auto;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
@@ -88,15 +87,15 @@ body {
 }
 
 .all-dest {
-    height: 50px; /* Reduced height */
+    height: 50px;
     width: fit-content;
-    width: 200px; /* Reduced width */
+    width: 200px; 
     background-color: black;
     color: white;
-    margin: 15px auto; /* Reduced margin */
+    margin: 15px auto; 
     display: block;
-    border-radius: 50px; /* Reduced border radius */
-    font-size: 1.3rem; /* Reduced font size */
+    border-radius: 50px; 
+    font-size: 1.3rem; 
     font-weight: 400;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -129,18 +128,18 @@ body {
         transform: translateY(0);
     }
 }
-/* Rotate and animate all icons */
+
 .contact-box svg {
-    color: skyblue; /* Dark gray color */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    color: skyblue; 
+    transition: transform 0.3s ease-in-out; 
 }
 
 .contact-box:hover svg {
-    transform: rotate(360deg); /* Rotate 360 degrees on hover */
-    animation: bounce 0.5s linear infinite; /* Add bouncing animation */
+    transform: rotate(360deg); 
+    animation: bounce 0.5s linear infinite;
 }
 
-/* Define bouncing animation */
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);

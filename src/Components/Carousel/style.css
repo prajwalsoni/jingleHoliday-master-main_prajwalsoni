@@ -1,4 +1,4 @@
-/* Global styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -8,7 +8,7 @@
     font-family: 'Montserrat', sans-serif; /* New default font */
 }
 
-/* Footer styles */
+
 .footer {
     background-color: #5c9de4;
     display: grid;
@@ -65,7 +65,7 @@
     transition: font-weight 0.3s ease-in-out;
 }
 
-/* Social media icon styles */
+
 .grid-item.social-media {
     flex-direction: column;
     align-items: center;
@@ -82,15 +82,15 @@
     animation: iconBounce 2s infinite;
 }
 
-/* Powered-by styles */
+
 .powered-by {
     font-weight: bold;
-    text-align: center; /* Center the text */
-    margin-top: 20px; /* Add some space above the text */
+    text-align: center; 
+    margin-top: 20px; 
     animation: fadeInMoveDown 2s ease-in-out, colorChange 5s infinite;
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -151,28 +151,28 @@
 @keyframes fadeInMoveDown {
     0% {
         opacity: 0;
-        transform: translateY(-20px); /* Start slightly above */
+        transform: translateY(-20px); 
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* End at the final position */
+        transform: translateY(0); 
     }
 }
 @keyframes colorChange {
     0% {
-        color: white; /* Start with black color */
+        color: white; 
     }
     25% {
-        color: #ff8c00; /* Change to a light orange color */
+        color: #ff8c00;
     }
     50% {
-        color: #ffd700; /* Change to a bright yellow color */
+        color: #ffd700; 
     }
     75% {
-        color: #F5C469  ; /* Change to a lime green color */
+        color: #F5C469  ; 
     }
     100% {
-        color: #F0DF87; /* End with black color */
+        color: #F0DF87; 
     }
 }
 
@@ -188,7 +188,7 @@
     }
 }
 
-/* Responsive styles */
+
 @media (max-width: 800px) {
     .footer {
         display: flex;
@@ -207,7 +207,7 @@
     }
 }
 
-/* Additional styles for Quick Links section */
+
 .grid-item.quick-links {
     text-align: center;
     background-color: #364d79;
@@ -239,14 +239,14 @@
     border-radius: 4px;
 }
 
-/* Styles for Carousel box */
+
 .carousel-box {
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
     width: 100%;
     position: relative;
-    background-color: #364d79; /* Adjusted background color */
+    background-color: #364d79; 
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -289,10 +289,10 @@
     background-color: white;
     color: black;
     transition: background-color 0.3s ease-in-out;
-    animation: none; /* Stop animation on hover */
+    animation: none; 
 }
 
-/* Additional keyframes */
+
 @keyframes slideInUp {
     from {
         opacity: 0;

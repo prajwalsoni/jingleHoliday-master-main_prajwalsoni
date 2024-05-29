@@ -3,7 +3,52 @@ body {
     line-height: 1.5;
 }
 
-/* Container for our services section */
+/* Contact boxes */
+.contact-box {
+    position: fixed;
+    width: 60px; /* Reduced width */
+    padding: 5px;
+    left: -30px;
+    background-color: #EFEFEF; /* Light gray background */
+    height: 60px; /* Reduced height */
+    z-index: 100;
+    transition: left 0.3s;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjust top positions for each box */
+.phone-box {
+    top: 200px;
+}
+
+.enquiry-box {
+    top: 270px;
+}
+
+.whatsapp-box {
+    top: 340px;
+}
+
+.gmail-box {
+    top: 410px;
+}
+
+/* Change icon colors */
+.contact-box svg {
+    color: skyblue; /* Dark gray color */
+}
+
+/* Hover effect */
+.contact-box:hover {
+    left: 0;
+}
+
+/* Rest of the CSS */
 .our-services {
     display: flex;
     flex-flow: column;
@@ -13,23 +58,20 @@ body {
     animation: fadeInDown 1s ease-in-out;
 }
 
-/* Title for our services */
 .our-services h1 {
     margin-top: 20px;
-    font-size: 3rem;
+    font-size: 2.5rem; /* Reduced font size */
     animation: slideInUp 1s ease-in-out;
 }
 
-/* Description for our services */
 .our-services p {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduced font size */
     width: 80%;
     margin: auto;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Container for service boxes */
 .box1 {
     max-width: 1140px;
     width: 100%;
@@ -41,35 +83,31 @@ body {
     padding: 20px 0px;
 }
 
-/* Background color for service section */
 .sec1 {
     background-color: #F8FAFF;
 }
 
-/* Button for all destinations */
 .all-dest {
-    height: 70px;
+    height: 50px; /* Reduced height */
     width: fit-content;
-    width: 250px;
+    width: 200px; /* Reduced width */
     background-color: black;
     color: white;
-    margin: 20px auto;
+    margin: 15px auto; /* Reduced margin */
     display: block;
-    border-radius: 100px;
-    font-size: 1.5rem;
+    border-radius: 50px; /* Reduced border radius */
+    font-size: 1.3rem; /* Reduced font size */
     font-weight: 400;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     animation: fadeInUp 1s ease-in-out;
 }
 
-/* Button hover effect */
 .all-dest:hover {
     background-color: white;
     color: black;
 }
 
-/* Keyframes for animations */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -89,6 +127,26 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+/* Rotate and animate all icons */
+.contact-box svg {
+    color: skyblue; /* Dark gray color */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.contact-box:hover svg {
+    transform: rotate(360deg); /* Rotate 360 degrees on hover */
+    animation: bounce 0.5s linear infinite; /* Add bouncing animation */
+}
+
+/* Define bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }
 
@@ -111,120 +169,4 @@ body {
         transform: translateY(0);
     }
 }
-/* Global styles */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    line-height: 1.5;
-}
 
-/* Container for our services section */
-.our-services {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
-    padding: 50px 0;
-}
-
-/* Title for our services */
-.our-services h1 {
-    margin-top: 20px;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    animation: fadeInDown 1s ease-in-out;
-}
-
-/* Description for our services */
-.our-services p {
-    font-size: 1.5rem;
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
-    animation: slideInUp 1s ease-in-out;
-}
-
-/* Container for service boxes */
-.box1 {
-    max-width: 1140px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
-
-/* Background color for service section */
-.sec1 {
-    background-color: #F8FAFF;
-}
-
-/* Button for all destinations */
-.all-dest {
-    height: 50px;
-    width: 250px;
-    background-color: black;
-    color: white;
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    animation: fadeInUp 1s ease-in-out;
-}
-
-/* Button hover effect */
-.all-dest:hover {
-    background-color: white;
-    color: black;
-}
-
-/* Keyframes for animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}

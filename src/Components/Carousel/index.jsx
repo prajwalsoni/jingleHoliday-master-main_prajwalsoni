@@ -20,8 +20,6 @@ export const ImageCarousel = ({ images }) => (
           <p>The Badrinath</p>
           <br />
           <button className="btns">Contact</button>
-          
-         
         </div>
       </div>
     </div>
@@ -64,7 +62,6 @@ export const ImageCarousel = ({ images }) => (
           <button className="btns">Contact</button>
         </div>
       </div>
-      
     </div>
     <div>
       <div className="carousel-box" style={{ backgroundImage: `url(${images[5]})` }}>
@@ -90,7 +87,7 @@ export const ImageCarousel = ({ images }) => (
       <div className="carousel-box" style={{ backgroundImage: `url(${images[7]})` }}>
         <div className="details-box">
           <h1>Welcome to Jingle Holiday Bazar Pvt Ltd.</h1>
-          <p>Goechala,Sikkim</p>
+          <p>Goechala, Sikkim</p>
           <br />
           <button className="btns">Contact</button>
         </div>
@@ -100,7 +97,7 @@ export const ImageCarousel = ({ images }) => (
       <div className="carousel-box" style={{ backgroundImage: `url(${images[8]})` }}>
         <div className="details-box">
           <h1>Welcome to Jingle Holiday Bazar Pvt Ltd.</h1>
-          <p>Darjeeling , WestBengal</p>
+          <p>Darjeeling, West Bengal</p>
           <br />
           <button className="btns">Contact</button>
         </div>

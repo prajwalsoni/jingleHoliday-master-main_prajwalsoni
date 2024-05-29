@@ -3,7 +3,7 @@ import { Navbar } from "../Navbar";
 import img1 from "../../assets/Badrinath.jpeg";
 import img2 from "../../assets/Rameshwaram.jpg";
 import img3 from "../../assets/Jaipur.jpg";
-import img4 from "../../assets/Rajasthan.webp";  
+import img4 from "../../assets/Rajasthan.webp";
 import img5 from "../../assets/Pondicherry1.jpg";
 import img6 from "../../assets/HimalayasMountainRangeInAsia.webp";
 import img7 from "../../assets/NewDelhiNCR.jpg";
@@ -29,10 +29,14 @@ import solang from '../../assets/Solang-Valley.jpg';
 import beach from '../../assets/beach.jpg';
 import { Tourist } from "../Tourist";
 import Footer from "../Footer";
-import EmailSidebar from "../EmailSidebar/EmailSidebar";
+import PhoneIcon from '@mui/icons-material/Phone';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import EnquiryIcon from '@mui/icons-material/QuestionAnswer';
+import { Email as GmailIcon } from '@mui/icons-material';
+
 
 export const HomePage = () => {
-  const images = [img1, img2, img3,img4,img5,img6,img7,img8,img9];
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
   const details = [
     {
@@ -54,9 +58,7 @@ export const HomePage = () => {
     {
       h: "FEATURED TOURS IN INDIA",
       p: `India is a vibrant land of startling contrasts where both the traditional and modern worlds meet. The world's seventh
-      largest tourist nation by area and the second largest in terms of population
-      
-      `,
+      largest tourist nation by area and the second largest in terms of population`,
     },
   ];
   const Place = [
@@ -80,7 +82,7 @@ export const HomePage = () => {
         img: leh,
         h: "Week At Thiksey Monastery",
         p: ` This 12-storey complex hosts over 500 monks and is considered to be one of the most beautiful Buddhist monasteries in all of Ladakh. For Ladakh sightseeing, Thiksey Gompa will enlighten you with knowledge about some of the Buddhist culture, lifestyle, scriptures, statues and even paintings.`,
-        l: "WhatsApp Now More Details"
+        l: "WhatsApp Now More Details",
       },
       {
         img: solang,
@@ -90,32 +92,46 @@ export const HomePage = () => {
       },
       {
         img: beach,
-        h: 'Week At Beach in Goa',
+        h: "Week At Beach in Goa",
         p: `Goa is the smallest state in India, Goa is synonymous to many captivating things that are best showcase of a life without stress and worries. The multitude of beaches in Goa`,
         l: "Contact",
-      }
-    ]
-  }
+      },
+    ],
+  };
 
   const boxCard = [
     {
       heading: 'Jingle Holiday Bazar Homestays',
       subHeading: 'Book Villas, Apartments and Resorts',
-      text: 'Jingle Holiday Bazar.com ventured into Homestays in India in 2015, and is providing great homestay experiences to its customers as well as benefits to its hosts. If you are looking for a holiday with a difference, want to closely savour the local flavours of a place, and prefer the comforts of a homely environment,Jingle Holiday Bazar Homestays is the answer.Jingle Holiday Bazar already has over 3500 homestay properties and is expanding fast. It has a stronghold in South India and across most hill stations of North India, with these places providing unique homestay experiences to customers. Some of its most popular homestay destinations are Goa, Manali, Shimla, Coorg, Wayanad, among other places.'
+      text: 'Jingle Holiday Bazar.com ventured into Homestays in India in 2015, and is providing great homestay experiences to its customers as well as benefits to its hosts. If you are looking for a holiday with a difference, want to closely savour the local flavours of a place, and prefer the comforts of a homely environment,Jingle Holiday Bazar Homestays is the answer.Jingle Holiday Bazar already has over 3500 homestay properties and is expanding fast. It has a stronghold in South India and across most hill stations of North India, with these places providing unique homestay experiences to customers. Some of its most popular homestay destinations are Goa, Manali, Shimla, Coorg, Wayanad, among other places.',
     },
     {
       heading: 'Jingle Holiday Bazar Hotels',
       subHeading: 'Book Hotels with Jingle Holiday Bazar.com',
-      text: 'We are back in the post-pandemic world with a bouquet of hotels across Indian cities ranging from leisure to business ones with a new outlook. Jingle Holiday Bazar who has always been on the forefront of assuring a comfortable stay which is a bang for your bucks, is offering you online hotel booking that guarantees you hygienic, sanitised rooms across hotels in India. Explore a raft of interesting features such as Clean Pass stays, travel again offers and long stay discounts encouraging you to travel again, make your hotel booking while keeping your anxieties at bay.'
+      text: 'We are back in the post-pandemic world with a bouquet of hotels across Indian cities ranging from leisure to business ones with a new outlook. Jingle Holiday Bazar who has always been on the forefront of assuring a comfortable stay which is a bang for your bucks, is offering you online hotel booking that guarantees you hygienic, sanitised rooms across hotels in India. Explore a raft of interesting features such as Clean Pass stays, travel again offers and long stay discounts encouraging you to travel again, make your hotel booking while keeping your anxieties at bay.',
     },
     {
       heading: 'Jingle Holiday Bazar flights',
       subHeading: 'Why to book Flights Online with Jingle Holiday Bazar.com',
-      text: 'Purchasing flight tickets and confirming your flight booking is the key aspect of planning a trip. Now whether you are travelling for business or on leisure, you cannot make an itinerary until you have first and foremost booked your flights. Procuring an air ticket is a mandatory first step once your travel plans are confirmed. It feels as though half the job is done the moment you secure confirmed flight ticket booking in your hand. The entire activity of searching air connectivity between two cities, checking the schedule of the flight and zeroing in on one that\'s most convenient to you can feel like a lot of work especially if you are in a hurry to book your flights.'
-    }
-  ]
+      text: 'Purchasing flight tickets and confirming your flight booking is the key aspect of planning a trip. Now whether you are travelling for business or on leisure, you cannot make an itinerary until you have first and foremost booked your flights. Procuring an air ticket is a mandatory first step once your travel plans are confirmed. It feels as though half the job is done the moment you secure confirmed flight ticket booking in your hand. The entire activity of searching air connectivity between two cities, checking the schedule of the flight and zeroing in on one that\'s most convenient to you can feel like a lot of work especially if you are in a hurry to book your flights.',
+    },
+  ];
+
   return (
     <>
+      <div className="contact-box phone-box">
+        <PhoneIcon />
+      </div>
+      <div className="contact-box enquiry-box">
+        <EnquiryIcon />
+      </div>
+      <div className="contact-box whatsapp-box">
+        <WhatsAppIcon />
+      </div>
+      <div className="contact-box gmail-box"> 
+        <GmailIcon />
+      </div>
+
       <Navbar />
       <ImageCarousel images={images} interval={4000} />
       <section className="sec1">

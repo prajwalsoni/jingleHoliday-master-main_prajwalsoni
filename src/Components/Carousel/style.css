@@ -1,10 +1,11 @@
 /* Global styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* New default font */
 }
 
 /* Footer styles */
@@ -99,6 +100,8 @@
     }
 }
 
+
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -157,7 +160,7 @@
 }
 @keyframes colorChange {
     0% {
-        color: #7CEC9F; /* Start with black color */
+        color: white; /* Start with black color */
     }
     25% {
         color: #ff8c00; /* Change to a light orange color */

@@ -39,7 +39,7 @@ export const BoxModal1 = ({ icons, heading, subHeading, text }) => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        {read ? "read less" : "read more"}
+        {read ? "Read Less" : "Read More"}
       </motion.button>
     </motion.div>
   );
